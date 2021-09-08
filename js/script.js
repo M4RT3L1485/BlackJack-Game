@@ -162,7 +162,7 @@ function computerWinner (){
         }
         else if(DEALER['score']>21){
             winner = YOU;
-            blackjackGame['winner']++;
+            blackjackGame['wins']++;
         }
     }
 
