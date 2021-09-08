@@ -1,5 +1,4 @@
 //Black Jack Game
-
 /*
     Query selector, is another way like getElementById or getElementButton
     In this case queryselector is going to work with css selectors
@@ -125,7 +124,7 @@ function sleep(ms){
 async function dealerLogic (){
     blackjackGame['isStand'] = true;
 
-    while(DEALER['score'] < 16 && blackjackGame['isStand'] === true){
+    while(DEALER['score'] < 12 && blackjackGame['isStand'] === true){
         let card = randomCard();
         showCard(card,DEALER);
         updateScore(card,DEALER);
