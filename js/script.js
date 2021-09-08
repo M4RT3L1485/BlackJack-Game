@@ -1,4 +1,5 @@
 //Black Jack Game
+
 /*
     Query selector, is another way like getElementById or getElementButton
     In this case queryselector is going to work with css selectors
@@ -102,9 +103,9 @@ function updateScore (card, activePlayer){
 }
 
 function showScore (activePlayer){
-    if(activePlayer['score']>21){
+    if(activePlayer['score'] >= 22){
         //Make a validation is the scores is grather than 21 is going to show Bust in red
-        document.querySelector(activePlayer['scoreSpan']).textContent = 'Bust !';
+        document.querySelector(activePlayer['scoreSpan']).textContent = 'Bust!';
         document.querySelector(activePlayer['scoreSpan']).style.color = 'red';
     }
     else{
@@ -124,7 +125,7 @@ function sleep(ms){
 async function dealerLogic (){
     blackjackGame['isStand'] = true;
 
-    while(DEALER['score'] < 12 && blackjackGame['isStand'] === true){
+    while(DEALER['score'] <= 21 && blackjackGame['isStand'] === true){
         let card = randomCard();
         showCard(card,DEALER);
         updateScore(card,DEALER);
@@ -148,7 +149,7 @@ function computerWinner (){
             under
         */
 
-        if(YOU['score'] > DEALER['score'] || DEALER['socre'] > 21){
+        if((YOU['score'] > DEALER['score']) || (DEALER['socre'] > 21)){
             blackjackGame['wins']++;
             winner = YOU;
         }
