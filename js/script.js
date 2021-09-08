@@ -160,7 +160,7 @@ function computerWinner (){
         else if(YOU['score'] === DEALER['score']){
             blackjackGame['draws']++;
         }
-        else if(YOU['score'] < DEALER['score'] && DEALER['score']>21){
+        else if(DEALER['score']>21){
             winner = YOU;
             blackjackGame['winner']++;
         }
