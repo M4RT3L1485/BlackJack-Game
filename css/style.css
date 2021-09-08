@@ -1,0 +1,37 @@
+.container-5{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.flex-blackjack-row-1,.flex-blackjack-row-2,.flex-blackjack-row-3{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex-blackjack-row-1,.flex-blackjack-row-2{
+    background: url('https://i.pinimg.com/200x150/6a/a5/e8/6aa5e823abec6542d8d410c724481402.jpg') center;
+    color: white;
+}
+.flex-blackjack-row-1 div{
+    border: 3px solid black;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    height: 350px;
+}
+.flex-blackjack-row-1 img{
+    width: 25%;
+    padding: 10px;
+}
+.flex-blackjack-row-2 {
+    border: 3px solid black;
+}
+.flex-blackjack-row-2 button{
+    padding: 10px;
+}
+table, td,th{
+    padding: 5px;
+    border: 1px solid black;
+}
