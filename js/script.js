@@ -152,16 +152,17 @@ function computerWinner (){
         if((YOU['score'] > DEALER['score']) || (DEALER['socre'] > 21)){
             blackjackGame['wins']++;
             winner = YOU;
-            console.log('Option 1');
         }
         else if((YOU['score'] < DEALER['score']) && (DEALER['score'] <= 21)){
             blackjackGame['loses']++;
             winner = DEALER;
-            console.log('Option 2');
         }
         else if(YOU['score'] === DEALER['score']){
             blackjackGame['draws']++;
-            console.log('Option 3');
+        }
+        else if(YOU['score'] < DEALER['score'] && DEALER['score']>21){
+            winner = YOU;
+            blackjackGame['winner']++;
         }
     }
 
@@ -170,13 +171,11 @@ function computerWinner (){
     else if((YOU['score'] > 21) && (DEALER['score'] <= 21)){
         blackjackGame['loses']++;
         winner = DEALER;
-        console.log('Option 4');
     }
 
     // When the dealer and you busts
     else if((YOU['score'] > 21) && (DEALER['score'] > 21)){
         blackjackGame['draws']++;
-        console.log('Option 5');
     }
 
     return winner;
