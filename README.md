@@ -6,4 +6,5 @@ To access to the game enter to the following link: https://m4rt3l1485.github.io/
 3. Prees the "Deal" button to reset the game
 
 Note: Remember that this game is about getting the sum of the cards 21 or less, if the dealer has more cards than you, he will win, otherwise you will win
+
 Idea taken of clever programer
